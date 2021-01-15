@@ -29,3 +29,22 @@ In JavaScript all variables and function names are case sensitive.
 
 var myName = "your name"; "your name" is called a string literal. 
 
+Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\r	carriage return
+\t	tab
+\b	word boundary
+\f	form feed
+
+.length is used to calculate string length
+
+In JS strings are immutable, which means individual characters of a string cannot be changed once created.
+This does not mean that Strings cannot hange over time, just that individual characters of a string cannot be changed.
+
+Unlike Strings, arrays are mutable
+
+.push() pushes element ot the end of the array
+.pop() pops the element at the end of the array. pop() returns the popped element, we can store this element into a new var
