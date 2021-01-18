@@ -48,3 +48,15 @@ Unlike Strings, arrays are mutable
 
 .push() pushes element ot the end of the array
 .pop() pops the element at the end of the array. pop() returns the popped element, we can store this element into a new var
+.shift() pops the element from the start of the array
+.unshift() adds element to the start of the array
+
+Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments.
+basically: fun(param1, param2){
+    //logic
+}
+fun(arg1, arg2);
+
+Variables which are used without the var keyword are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with var.
+
+queue: .push(element), .shift()
