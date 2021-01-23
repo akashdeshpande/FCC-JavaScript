@@ -130,3 +130,12 @@ var anotherObject = {
 };
 
 However, if your object has any non-string properties, JavaScript will automatically typecast them as strings.
+
+JSON
+There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array.
+1. obj.property
+2. obj["property"]
+3. prop = "property";
+    obj[prop]
+
+Don't use do operator when you have a variable stored with property to look up. Use bracket notation instead.
