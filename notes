@@ -141,3 +141,4 @@ There are two ways to access the properties of an object: dot notation (.) and b
 Don't use do operator when you have a variable stored with property to look up. Use bracket notation instead.
 
  obj["property"]
+ 
