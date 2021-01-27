@@ -150,3 +150,32 @@ Don't use do operator when you have a variable stored with property to look up. 
  for (var i = 0; i < 10; i++);
  the terminating condition of for loop is not inclusive.
  
+----
+ES6 - 2015
+
+ES5 was released in 2009
+ES6 in 2015
+
+The most recent standardized version is called ECMAScript 6 (ES6), released in 2015. This new version of the language adds some powerful features that will be covered in this section of challenges, including:
+
+    Arrow functions
+    Classes
+    Modules
+    Promises
+    Generators
+    let and const
+
+var can be overridden, let cant be overridden
+var a = 10;
+a = 12;
+// a becomes 12
+
+let b =15;
+b = 6;
+// throws error in console
+"use strict";
+x = 3.14; // throws an error because x is not declared
+
+When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function.
+The let keyword behaves similarly, but with some extra features. When you declare a variable with the let keyword inside a block, statement, or expression, its scope is limited to that block, statement, or expression.
+
