@@ -1,0 +1,7 @@
+prototypes
+object
+this keyword
+hoisting
+coupling
+bubbling
+scope
