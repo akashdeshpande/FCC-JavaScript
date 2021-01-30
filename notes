@@ -186,3 +186,57 @@ The const declaration has many use cases in modern JavaScript.
 Some developers prefer to assign all their variables using const by default, unless they know they will need to reassign the value. Only in that case, they use let.
 
 However, it is important to understand that objects (including arrays and functions) assigned to a variable using const are still mutable. Using the const declaration only prevents reassignment of the variable identifier.
+
+const declaration alone doesn't really protect your data from mutation. To ensure your data doesn't change, JavaScript provides a function Object.freeze to prevent data mutation.
+
+Once the object is frozen, you can no longer add, update, or delete properties from it. Any attempt at changing the object will be rejected without an error.
+
+Arrow functions are anonymous functions
+... = function() {
+  //statements
+}
+can be written as
+... = () => {
+  //statemnets
+}
+
+When there is no function body, and only a return value, arrow function syntax allows you to omit the keyword return as well as the brackets surrounding the code. This helps simplify smaller functions into one-line statements:
+like :
+const myFunc = () => "value";
+
+
+
+Just like a regular function, you can pass arguments into an arrow function.
+
+// doubles input value and returns it
+const doubler = (item) => item * 2;
+doubler(4); // returns 8
+
+If an arrow function has a single parameter, the parentheses enclosing the parameter may be omitted.
+
+// the same function, without the parameter parentheses
+const doubler = item => item * 2;
+
+It is possible to pass more than one argument into an arrow function.
+
+// multiplies the first input value by the second and returns it
+const multiplier = (item, multi) => item * multi;
+multiplier(4, 2); // returns 8
+
+
+
+In order to help us create more flexible functions, ES6 introduces default parameters for functions.
+
+Check out this code:
+
+const greeting = (name = "Anonymous") => "Hello " + name;
+
+console.log(greeting("John")); // Hello John
+console.log(greeting()); // Hello Anonymous
+
+The default parameter kicks in when the argument is not specified (it is undefined). As you can see in the example above, the parameter name will receive its default value "Anonymous" when you do not provide a value for the parameter. You can add default values for as many parameters as you want.
+
+funcion(...args), where args is the argument array, and can take many arguments
+filter, map, reduce can be applied to such functions
+"..." here is known as the rest parameter
+
